@@ -1,8 +1,10 @@
 import random
 import time
 import os
+os.system('clear')
+print("t = tas -- k = kagit -- m = makas i kullanin \n \n")
 bscm = ['tas','kagit','makas']
-skr = -1
+skr = 0
 k = str("k")
 m = str("m")
 t = str("t")
@@ -10,6 +12,16 @@ E = str("E")
 e = str("e")
 h = str("h")
 H = str("H")
+M = str("M")
+L = str("L")
+print ("Zorluk seviyesi --> ' H= Hard - M= Medium - L= Low ' :")
+zrlk = str(input())
+if(zrlk == "H"):
+    skr += 2
+if(zrlk == "M"):
+    skr += 5
+if(zrlk == "L"):
+    skr += 10
 if(skr <0):
     print("KAYBETTINIZ")
     print("Tekrar oynamak istermisiniz ? [E/H]")
@@ -21,8 +33,6 @@ if(skr <0):
     if((tkr == "h") or (tkr == "H")):
         os.system('exit')
         os.system('exit')
-os.system('clear')
-print("t = tas -- k = makas -- ")
 while skr >= 0:
     print("\n \n \n")
     bot = random.choice(bscm)
@@ -92,5 +102,3 @@ while skr >= 0:
         print("Seciminiz : ")
         kscm = str(input())
     print "Botun sectigi ->" , bot , "<- idi "
-
-
