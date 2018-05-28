@@ -1,3 +1,4 @@
+#python2.x sürümü kulllan
 import random
 import time
 import os
