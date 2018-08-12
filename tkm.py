@@ -15,13 +15,13 @@ h = str("h")
 H = str("H")
 M = str("M")
 L = str("L")
-print ("Zorluk seviyesi --> ' H= Hard - M= Medium - L= Low ' :")
+print ("Zorluk seviyesi --> ' Z= Zor - O= Orta- K= Kolay ' :")
 zrlk = str(input())
-if(zrlk == "H"):
+if(zrlk == "Z"):
     skr += 2
-if(zrlk == "M"):
+if(zrlk == "O"):
     skr += 5
-if(zrlk == "L"):
+if(zrlk == "K"):
     skr += 10
 if(skr <0):
     print("KAYBETTINIZ")
